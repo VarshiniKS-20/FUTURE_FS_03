@@ -31,7 +31,7 @@
     ::-webkit-scrollbar-track{background:var(--cream-dark)}
     ::-webkit-scrollbar-thumb{background:var(--caramel);border-radius:3px}
 
-    /* ---- NAV ---- */
+    
     nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 5%;background:rgba(253,246,236,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(200,130,26,0.15);display:flex;align-items:center;justify-content:space-between;height:70px;transition:box-shadow var(--transition)}
     nav.scrolled{box-shadow:0 4px 30px var(--shadow-warm)}
     .nav-logo{font-family:var(--font-script);font-size:1.7rem;color:var(--mocha);letter-spacing:.5px;display:flex;align-items:center;gap:8px}
@@ -59,7 +59,7 @@
     .mobile-menu a{font-family:var(--font-body);font-size:1rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text-mid);padding:10px 0;border-bottom:1px solid var(--cream-dark)}
     .mobile-menu a:last-child{border-bottom:none}
 
-    /* ---- HERO ---- */
+    
     .hero{min-height:100vh;display:flex;align-items:center;padding:100px 5% 60px;position:relative;overflow:hidden}
     .hero::before{content:'';position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 80% 60% at 70% 40%,rgba(232,168,62,.18) 0%,transparent 70%),radial-gradient(ellipse 60% 80% at 20% 80%,rgba(196,133,106,.15) 0%,transparent 60%),linear-gradient(160deg,#fdf6ec 0%,#f5e3c8 50%,#eedbbf 100%)}
     .hero::after{content:'';position:absolute;width:520px;height:520px;border-radius:50%;border:60px solid rgba(200,130,26,.07);top:-80px;right:-120px;z-index:0}
@@ -103,7 +103,7 @@
     .hero-stat-label{font-size:.8rem;color:var(--text-light);line-height:1.3;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
     .hero-stat-divider{width:1px;height:40px;background:var(--blush)}
 
-    /* ---- SECTIONS ---- */
+    
     section{padding:90px 5%}
     .section-tag{display:inline-block;font-family:var(--font-script);font-size:1.15rem;color:var(--caramel);margin-bottom:8px}
     .section-title{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;color:var(--mocha);line-height:1.2;margin-bottom:12px}
@@ -112,12 +112,12 @@
     .section-header.center{text-align:center}
     .section-header.center .section-sub{margin:0 auto}
 
-    /* ---- MENU CARDS ---- */
+    
     .menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:28px}
     .menu-card{background:white;border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 4px 20px var(--shadow-warm);transition:transform var(--transition),box-shadow var(--transition);cursor:pointer;display:flex;flex-direction:column}
     .menu-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px var(--shadow-deep)}
 
-    /* KEY FIX: fixed-height image area, no collapse */
+    
     .card-img{height:180px;min-height:180px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;flex-shrink:0}
     .card-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s ease}
     .menu-card:hover .card-img img{transform:scale(1.07)}
@@ -129,7 +129,7 @@
     .card-desc{flex:1}
     .card-footer{margin-top:auto;padding-top:12px}
 
-    /* gradients */
+    
     .bg-espresso{background:linear-gradient(135deg,#3b1f0e,#7b4520)}
     .bg-latte{background:linear-gradient(135deg,#c89060,#e8c49a)}
     .bg-cappuccino{background:linear-gradient(135deg,#8b5e3c,#c8a070)}
@@ -164,7 +164,7 @@
     .card-btn{padding:7px 16px;background:var(--mocha);color:var(--cream);border-radius:100px;font-size:.78rem;font-weight:700;letter-spacing:.5px;transition:all var(--transition);border:none;cursor:pointer}
     .card-btn:hover{background:var(--caramel);transform:scale(1.05)}
 
-    /* ---- SECTION THEMES ---- */
+    
     #coffee{background:var(--off-white)}
     #pastries{background:var(--cream)}
     #combos{background:var(--mocha);position:relative;overflow:hidden}
@@ -183,14 +183,14 @@
     .combo-card:hover{transform:translateY(-8px)!important;box-shadow:0 20px 60px rgba(0,0,0,.5)!important}
     .combo-badge{position:absolute;top:12px;left:12px;z-index:3;background:var(--caramel);color:white;font-size:.7rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:4px 10px;border-radius:100px}
 
-    /* ---- ABOUT STRIP ---- */
+   
     .about-strip{padding:80px 5%;background:linear-gradient(135deg,var(--caramel) 0%,var(--dusty-rose) 100%);display:flex;align-items:center;justify-content:center;gap:60px;flex-wrap:wrap;text-align:center}
     .about-strip-item{max-width:260px}
     .about-strip-icon{font-size:2.8rem;margin-bottom:12px}
     .about-strip-title{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:white;margin-bottom:8px}
     .about-strip-text{font-size:.88rem;color:rgba(255,255,255,.85);line-height:1.6}
 
-    /* ---- TESTIMONIALS ---- */
+    
     #testimonials{background:var(--cream-dark)}
     .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
     .testi-card{background:white;border-radius:var(--radius-lg);padding:28px;box-shadow:0 4px 20px var(--shadow-warm);position:relative;transition:transform var(--transition)}
@@ -206,7 +206,7 @@
     .testi-name{font-weight:700;font-size:.9rem;color:var(--mocha)}
     .testi-role{font-size:.78rem;color:var(--text-light)}
 
-    /* ---- CONTACT ---- */
+    
     #contact{background:var(--off-white)}
     .contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:start}
     .contact-info-title{font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--mocha);margin-bottom:8px}
@@ -242,7 +242,7 @@
     .map-placeholder-icon{font-size:2.5rem}
     .map-placeholder strong{color:var(--mocha);font-family:var(--font-display);font-size:1rem}
 
-    /* ---- FOOTER ---- */
+   
     footer{background:var(--espresso);color:rgba(255,255,255,.7);padding:60px 5% 30px}
     .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:48px}
     .footer-brand-name{font-family:var(--font-script);font-size:1.8rem;color:white;margin-bottom:12px;display:block}
@@ -260,7 +260,7 @@
     .back-top.visible{opacity:1;pointer-events:all}
     .back-top:hover{transform:translateY(-3px)}
 
-    /* ---- CART SIDEBAR ---- */
+    
     .cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:2000;opacity:0;pointer-events:none;transition:opacity .3s ease}
     .cart-overlay.open{opacity:1;pointer-events:all}
     .cart-sidebar{position:fixed;top:0;right:0;bottom:0;width:min(420px,100vw);background:var(--cream);z-index:2001;transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;box-shadow:-20px 0 60px rgba(0,0,0,.2)}
@@ -299,7 +299,6 @@
     .cart-clear-btn{width:100%;padding:10px;background:none;color:var(--text-light);border:1.5px solid var(--blush);border-radius:var(--radius-xl);font-family:var(--font-body);font-size:.85rem;font-weight:700;cursor:pointer;transition:all var(--transition);margin-top:10px}
     .cart-clear-btn:hover{border-color:var(--dusty-rose);color:var(--dusty-rose)}
 
-    /* ---- ORDER MODAL ---- */
     .order-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:3000;display:none;align-items:center;justify-content:center;padding:20px}
     .order-modal-overlay.show{display:flex}
     .order-modal{background:white;border-radius:var(--radius-lg);padding:48px 40px;max-width:480px;width:100%;text-align:center;animation:modalPop .4s cubic-bezier(.34,1.56,.64,1)}
@@ -314,11 +313,10 @@
     .order-modal-close{margin-top:24px;padding:12px 36px;background:var(--mocha);color:var(--cream);border:none;border-radius:var(--radius-xl);font-family:var(--font-body);font-size:.9rem;font-weight:700;cursor:pointer;transition:all var(--transition)}
     .order-modal-close:hover{background:var(--caramel)}
 
-    /* ---- TOAST ---- */
+    
     .toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--mocha);color:var(--cream);padding:12px 24px;border-radius:100px;font-size:.88rem;font-weight:700;z-index:9999;opacity:0;transition:all .3s ease;pointer-events:none;white-space:nowrap;box-shadow:0 8px 28px var(--shadow-deep)}
     .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
-    /* ---- ANIMATIONS ---- */
     @keyframes fadeSlideUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
     @keyframes floatBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
     @keyframes steamRise{0%{transform:translateY(0) scaleX(1);opacity:.8}50%{transform:translateY(-20px) scaleX(1.3);opacity:.4}100%{transform:translateY(-40px) scaleX(.8);opacity:0}}
@@ -331,7 +329,7 @@
     .reveal-delay-3{transition-delay:.3s}
     .reveal-delay-4{transition-delay:.4s}
 
-    /* ---- RESPONSIVE ---- */
+    
     @media(max-width:900px){
       .hero-inner{grid-template-columns:1fr;gap:48px;text-align:center}
       .hero-text{order:2}.hero-visual{order:1}
@@ -372,7 +370,7 @@
 </head>
 <body>
 
-<!-- NAV -->
+
 <nav id="navbar">
   <a href="#hero" class="nav-logo">☕ Ember <span>&</span> Bloom</a>
   <ul class="nav-links">
@@ -400,7 +398,6 @@
   <a href="#" onclick="closeMobileMenu();openCart();return false;">🛒 Cart (<span id="mobileCartCount">0</span>)</a>
 </div>
 
-<!-- CART SIDEBAR -->
 <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
 <div class="cart-sidebar" id="cartSidebar">
   <div class="cart-header">
@@ -417,7 +414,7 @@
   </div>
 </div>
 
-<!-- ORDER MODAL -->
+
 <div class="order-modal-overlay" id="orderModal">
   <div class="order-modal">
     <div class="order-modal-icon">🎉</div>
@@ -432,10 +429,10 @@
   </div>
 </div>
 
-<!-- TOAST -->
+
 <div class="toast" id="toast"></div>
 
-<!-- HERO -->
+
 <section class="hero" id="hero">
   <div class="hero-inner">
     <div class="hero-text">
@@ -471,14 +468,14 @@
   </div>
 </section>
 
-<!-- ABOUT STRIP -->
+
 <div class="about-strip">
   <div class="about-strip-item reveal"><div class="about-strip-icon">🌱</div><div class="about-strip-title">Farm to Cup</div><div class="about-strip-text">Sourced directly from small-batch farms. Every bean has a story.</div></div>
   <div class="about-strip-item reveal reveal-delay-2"><div class="about-strip-icon">👨‍🍳</div><div class="about-strip-title">Crafted Daily</div><div class="about-strip-text">Our pastries are baked fresh every morning — never a day old.</div></div>
   <div class="about-strip-item reveal reveal-delay-3"><div class="about-strip-icon">💛</div><div class="about-strip-title">With Love</div><div class="about-strip-text">Family-owned since 2016. Every cup made like it's for a friend.</div></div>
 </div>
 
-<!-- COFFEE SECTION -->
+
 <section id="coffee">
   <div class="section-header reveal">
     <span class="section-tag">Our Signature Brews</span>
@@ -619,7 +616,6 @@
   </div>
 </section>
 
-<!-- PASTRIES SECTION -->
 <section id="pastries">
   <div class="section-header reveal">
     <span class="section-tag">From Our Oven</span>
@@ -711,11 +707,6 @@
         <div class="card-img-overlay"></div>
         <div class="card-tag">Weekend Special</div>
       </div>
-      <div class="card-body">
-        <div class="card-name">Cinnamon Roll</div>
-        <div class="card-desc">Soft, pillowy dough swirled with cinnamon sugar, drizzled with cream cheese glaze. Warm and irresistible.</div>
-        <div class="card-footer"><div class="card-price">₹115 <span>/piece</span></div><button class="card-btn">Add to Cart</button></div>
-      </div>
     </div>
 
     <div class="menu-card reveal reveal-delay-3" data-name="Tiramisu Slice" data-price="170" data-emoji="🍮">
@@ -734,7 +725,6 @@
   </div>
 </section>
 
-<!-- COMBOS SECTION -->
 <section id="combos">
   <div class="section-header center reveal">
     <span class="section-tag">Save More, Savour More</span>
@@ -824,7 +814,6 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section id="testimonials">
   <div class="section-header center reveal">
     <span class="section-tag">Kind Words</span>
@@ -838,7 +827,6 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="section-header reveal">
     <span class="section-tag">Come Say Hello</span>
@@ -849,18 +837,16 @@
     <div class="reveal">
       <div class="contact-info-title">Get in Touch</div>
       <div class="contact-info-sub">Drop by for a coffee or reach out digitally. Our doors (and inbox) are always open.</div>
-      <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-item-text"><strong>Address</strong><span>12, Bloom Lane, Koramangala<br>Bengaluru, Karnataka 560034</span></div></div>
+      <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-item-text"><strong>Address</strong><span>12, Bloom Lane, JayDev Circle<br>Davangere, Karnataka 577002</span></div></div>
       <div class="contact-item"><div class="contact-icon">📞</div><div class="contact-item-text"><strong>Phone</strong><span>+91 98765 43210</span></div></div>
       <div class="contact-item"><div class="contact-icon">📧</div><div class="contact-item-text"><strong>Email</strong><span>hello@emberandbloom.in</span></div></div>
-      <div class="contact-item"><div class="contact-icon">📸</div><div class="contact-item-text"><strong>Instagram</strong><span>@emberandbloom.cafe</span></div></div>
-      <div class="hours-table">
         <div class="hours-row"><span class="hours-day">Mon – Fri</span><span class="hours-time">7:00 AM – 9:00 PM</span></div>
         <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">8:00 AM – 10:00 PM</span></div>
         <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">9:00 AM – 8:00 PM</span></div>
         <div class="hours-row"><span class="hours-day">Public Holidays</span><span class="hours-closed">10:00 AM – 6:00 PM</span></div>
       </div>
       <div class="map-placeholder">
-        <div class="map-placeholder-icon">🗺️</div>
+        <div class="map-placeholder-icon"></div>
         <strong>Ember & Bloom Café</strong>
         <span>12, Bloom Lane, Koramangala, Bengaluru</span>
         <a href="https://maps.google.com" target="_blank" style="color:var(--caramel);font-weight:700;font-size:.85rem;margin-top:4px">Open in Google Maps →</a>
@@ -879,11 +865,11 @@
           <div class="form-group"><label class="form-label" for="phone">Phone Number</label><input type="tel" id="phone" class="form-input" placeholder="+91 98765 43210" /></div>
           <div class="form-group"><label class="form-label" for="reason">Reason for Contact</label><select id="reason" class="form-select"><option value="">Select a reason…</option><option>Table Reservation</option><option>Private Event Booking</option><option>Corporate Order</option><option>Feedback</option><option>Partnership / Collaboration</option><option>Just Saying Hi! ☕</option></select></div>
           <div class="form-group"><label class="form-label" for="message">Your Message</label><textarea id="message" class="form-textarea" placeholder="Tell us anything…" required></textarea></div>
-          <button type="submit" class="form-submit">☕ Send Message</button>
+          <button type="submit" class="form-submit"> Send Message</button>
         </form>
       </div>
       <div class="form-success" id="formSuccess">
-        <div class="form-success-icon">☕</div>
+        <div class="form-success-icon"></div>
         <h3>Message Received!</h3>
         <p>Thank you for reaching out. We'll get back to you within 24 hours — or come in for a coffee!</p>
       </div>
@@ -891,18 +877,11 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div>
-      <span class="footer-brand-name">☕ Ember & Bloom</span>
+      <span class="footer-brand-name"> Ember & Bloom</span>
       <p class="footer-brand-desc">A neighbourhood café committed to craft coffee, honest ingredients, and warm hospitality. Every visit should feel like coming home.</p>
-      <div class="footer-social">
-        <div class="social-icon" title="Instagram">📸</div>
-        <div class="social-icon" title="Facebook">👥</div>
-        <div class="social-icon" title="Twitter">🐦</div>
-        <div class="social-icon" title="WhatsApp">💬</div>
-      </div>
     </div>
     <div>
       <div class="footer-col-title">Quick Links</div>
@@ -915,9 +894,9 @@
     <div>
       <div class="footer-col-title">Visit Us</div>
       <ul class="footer-links">
-        <li><a href="#">12, Bloom Lane, Koramangala</a></li>
-        <li><a href="#">Bengaluru – 560034</a></li>
-        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+        <li><a href="#">12, Bloom Lane, JayDev Circle </a></li>
+        <li><a href="#">Davangere – 577002</a></li>
+        <li><a href="tel:+91987654321">+91 98765 43210</a></li>
         <li><a href="mailto:hello@emberandbloom.in">hello@emberandbloom.in</a></li>
         <li><a href="#">Mon–Fri: 7 AM – 9 PM</a></li>
       </ul>
@@ -932,7 +911,6 @@
 <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
 
 <script>
-  /* ---- NAV ---- */
   const navbar=document.getElementById('navbar'),backTop=document.getElementById('backTop');
   window.addEventListener('scroll',()=>{
     const y=window.scrollY;
@@ -940,18 +918,15 @@
     backTop.classList.toggle('visible',y>400);
   });
 
-  /* ---- HAMBURGER ---- */
   const hamburger=document.getElementById('hamburger'),mobileMenu=document.getElementById('mobile-menu');
   hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileMenu.classList.toggle('open')});
   function closeMobileMenu(){hamburger.classList.remove('open');mobileMenu.classList.remove('open')}
   document.addEventListener('click',(e)=>{if(!hamburger.contains(e.target)&&!mobileMenu.contains(e.target))closeMobileMenu()});
 
-  /* ---- REVEAL ---- */
   const revealEls=document.querySelectorAll('.reveal');
   const ro=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target)}})},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
   revealEls.forEach(el=>ro.observe(el));
 
-  /* ---- ACTIVE NAV ---- */
   const secs=document.querySelectorAll('section[id]'),navLks=document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll',()=>{
     let cur='';
@@ -959,10 +934,8 @@
     navLks.forEach(l=>{l.style.color=l.getAttribute('href')==='#'+cur?'var(--caramel)':''});
   });
 
-  /* ---- CART STATE ---- */
   let cart=[];
 
-  /* Bind all card buttons */
   document.querySelectorAll('.menu-card').forEach(card=>{
     const btn=card.querySelector('.card-btn');
     if(btn) btn.addEventListener('click',(e)=>{
@@ -998,11 +971,11 @@
     const count=cart.reduce((s,i)=>s+i.qty,0);
     const tax=Math.round(subtotal*0.05);
     const grand=subtotal+tax;
-    /* count badge */
+    
     const cc=document.getElementById('cartCount');
     cc.textContent=count;cc.classList.toggle('show',count>0);
     document.getElementById('mobileCartCount').textContent=count;
-    /* items */
+    
     const el=document.getElementById('cartItemsEl');
     const footer=document.getElementById('cartFooter');
     if(cart.length===0){
@@ -1044,7 +1017,7 @@
     const tax=Math.round(subtotal*0.05);
     const grand=subtotal+tax;
     const orderId='EB'+Math.floor(1000+Math.random()*9000);
-    /* Build summary */
+    
     document.getElementById('orderSummary').innerHTML=cart.map(i=>`
       <div class="order-item-line">
         <span>${i.emoji} ${i.name} × ${i.qty}</span>
@@ -1062,8 +1035,6 @@
     t.textContent=msg;t.classList.add('show');
     setTimeout(()=>t.classList.remove('show'),2200);
   }
-
-  /* ---- CONTACT FORM ---- */
   function handleFormSubmit(e){
     e.preventDefault();
     document.getElementById('formWrap').style.display='none';
