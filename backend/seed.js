@@ -1,10 +1,7 @@
-/**
- * Run this ONCE to create the admin user:
- *   node seed.js
- */
-
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const bcrypt = require('bcryptjs');
+
 dotenv.config();
 
 const User = require('./models/User');
@@ -12,23 +9,28 @@ const Lead = require('./models/Lead');
 
 async function seed() {
   await mongoose.connect(process.env.MONGODB_URI);
-  console.log('Connected to MongoDB');
+  console.log('✅ Connected to MongoDB');
 
   // Create admin user
-  const existing = await User.findOne({ email: process.env.ADMIN_EMAIL || 'admin@crm.com' });
+  const existing = await User.findOne({ email: process.env.ADMIN_EMAIL });
+
   if (!existing) {
+    const hashedPassword = await bcrypt.hash(process.env.ADMIN_PASSWORD, 10);
+
     await User.create({
       name: 'Admin',
-      email: process.env.ADMIN_EMAIL || 'admin@crm.com',
-      password: process.env.ADMIN_PASSWORD || 'admin123'
+      email: process.env.ADMIN_EMAIL,
+      password: hashedPassword
     });
+
     console.log('✅ Admin user created: admin@crm.com / admin123');
   } else {
-    console.log('ℹ️  Admin user already exists');
+    console.log('ℹ️ Admin already exists');
   }
 
   // Create sample leads
   const count = await Lead.countDocuments();
+
   if (count === 0) {
     await Lead.insertMany([
       { name: 'Alice Johnson', email: 'alice@techcorp.com', phone: '+1 555 0101', company: 'TechCorp', source: 'Website', status: 'new', message: 'Interested in your enterprise plan.' },
@@ -37,16 +39,17 @@ async function seed() {
       { name: 'David Kim', email: 'david@agency.com', company: 'Digital Agency', source: 'Cold Call', status: 'lost', message: 'Went with a competitor.' },
       { name: 'Eva Chen', email: 'eva@freelance.dev', source: 'Email', status: 'new', message: 'Asked about freelancer pricing.' },
     ]);
+
     console.log('✅ Sample leads created');
   } else {
-    console.log('ℹ️  Leads already exist, skipping sample data');
+    console.log('ℹ️ Leads already exist');
   }
 
   await mongoose.disconnect();
-  console.log('Done!');
+  console.log('🎉 Seeding completed!');
 }
 
 seed().catch(err => {
-  console.error(err);
+  console.error('❌ Error:', err);
   process.exit(1);
 });
